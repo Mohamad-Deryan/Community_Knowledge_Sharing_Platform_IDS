@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8a9bc23044.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" crossorigin="anonymous">
+</head>
+<body data-page="post-details">
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand navbar-logo" href="index.html">Community Platform</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span class="fas fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="profile.html">Profile</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="create-post.html">Create Post</a> </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">
+                      <i class="fa-solid fa-user"></i> Login/Sign Up
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Post Details Section -->
+    <section class="post-details">
+        <div class="container">
+            <h1 class="post-title">Post Title Goes Here</h1>
+            <p class="post-meta">Posted by <span class="post-author">Author Name</span> on <span class="post-date">January 1, 2025</span></p>
+            <div class="post-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt ex id mi ullamcorper, id tincidunt lectus ultrices. Proin vel justo ut erat sollicitudin pretium.</p>
+                <p>Quisque vel elit vitae neque fermentum dignissim non nec nulla. Vivamus at volutpat risus, ac tincidunt velit. Integer sit amet bibendum augue.</p>
+            </div>
+            <div class="post-tags">
+                <span class="tag">#Example</span>
+                <span class="tag">#KnowledgeSharing</span>
+                <span class="tag">#Tips</span>
+            </div>
+            <hr>
+            <h3>Comments</h3>
+            <div class="comments">
+                <div class="comment">
+                    <strong>John Doe:</strong>
+                    <p>This is an insightful post. Thanks for sharing!</p>
+                </div>
+                <div class="comment">
+                    <strong>Jane Smith:</strong>
+                    <p>Great tips, very helpful!</p>
+                </div>
+            </div>
+            <form id="comment-form">
+                <h4>Leave a Comment</h4>
+                <textarea id="comment-input" class="form-control" rows="4" placeholder="Write your comment here..."></textarea>
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2025 Community Knowledge Sharing Platform</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
